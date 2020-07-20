@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ring"
+    android:onClick="hideMenu"
+    android:orientation="vertical"
+    tools:context=".PaintBook" >
+
+    <ImageView
+        android:id="@+id/pallete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="setColor"
+        android:src="@drawable/pallete" />
+
+    <ImageView
+        android:id="@+id/marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pallete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="setMarker"
+        android:src="@drawable/ic_menu_marker" />
+
+    <ImageView
+        android:id="@+id/brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roll"
+        android:layout_alignTop="@+id/pallete"
+        android:layout_marginLeft="15dp"
+        android:onClick="setBrush"
+        android:src="@drawable/ic_menu_brush" />
+
+    <ImageView
+        android:id="@+id/eraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/marker"
+        android:layout_below="@+id/pallete"
+        android:layout_marginTop="5dp"
+        android:onClick="setEraser"
+        android:src="@drawable/ic_menu_eraser" />
+
+    <ImageView
+        android:id="@+id/pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pallete"
+        android:layout_toLeftOf="@+id/pallete"
+        android:onClick="setPen"
+        android:src="@drawable/ic_menu_pen" />
+
+    <ImageView
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pencil"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/eraser"
+        android:onClick="setRoll"
+        android:src="@drawable/ic_menu_roll" />
+
+    <ImageView
+        android:id="@+id/pencil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eraser"
+        android:layout_alignLeft="@+id/pen"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="14dp"
+        android:onClick="setPencil"
+        android:src="@drawable/ic_menu_pencil" />
+
+</RelativeLayout>
